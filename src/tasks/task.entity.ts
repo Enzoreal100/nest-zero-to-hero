@@ -12,6 +12,10 @@ export class Task {
   @Column()
   description: string;
 
-  @Column()
+  @Column({ default: TaskStatus.OPEN })
   status: TaskStatus;
+
+  constructor(data: Partial<Task>) {
+    Object.assign(this, data);
+  }
 }
