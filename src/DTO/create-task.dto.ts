@@ -1,4 +1,4 @@
-import { TaskStatus } from 'src/tasks/task.model';
+import { TaskStatus } from 'src/tasks/task-status.enum';
 // using class validator pipe
 import { IsNotEmpty } from 'class-validator';
 
