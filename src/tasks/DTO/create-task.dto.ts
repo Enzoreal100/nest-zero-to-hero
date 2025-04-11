@@ -16,4 +16,8 @@ export class CreateTaskDTO {
   @IsEnum(TaskStatus)
   @IsOptional()
   status?: TaskStatus;
+
+  @ApiProperty()
+  @IsOptional()
+  isActive?: boolean;
 }
